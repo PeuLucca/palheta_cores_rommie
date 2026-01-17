@@ -37,6 +37,43 @@
             font-size: 1.1rem;
         }
 
+        .logo-container {
+            text-align: center;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rommie-logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 1.5rem;
+            background: linear-gradient(to bottom right, #2563eb, #6366f1, #8b5cf6);
+            box-shadow: 0 10px 30px rgba(2, 6, 23, 0.18);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: default;
+            user-select: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .rommie-logo:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(2, 6, 23, 0.25);
+        }
+
+        .rommie-logo-letter {
+            font-size: 60px;
+            font-weight: 800;
+            color: white;
+            letter-spacing: -0.04em;
+            text-shadow: 0 2px 10px rgba(2, 6, 23, 0.25);
+            line-height: 1;
+        }
+
         .section {
             background: white;
             border-radius: 16px;
@@ -181,6 +218,11 @@
 </head>
 <body>
     <div class="container">
+        <div class="logo-container">
+            <div class="rommie-logo" role="img" aria-label="Rommie">
+                <span class="rommie-logo-letter" aria-hidden="true">R</span>
+            </div>
+        </div>
         <h1>🎨 Paleta de Cores - Rommie</h1>
         <p class="subtitle">Guia completo de cores para materiais de marketing</p>
 
@@ -696,6 +738,7 @@
                 }, 2000);
             });
         }
+
     </script>
 </body>
 </html>
